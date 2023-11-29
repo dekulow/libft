@@ -1,0 +1,20 @@
+## subjects
+subjects/
+*.subjects.pdf
+
+## school docs
+*.pdf
+
+## vscode config
+.vscode/
+.devcontainer/
+
+## caches files
+*.swp
+
+## exec
+a.out
+
+## compilation files
+*.o
+*.a
