@@ -6,7 +6,7 @@
 /*   By: dekulow <dekulow@42.student.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 11:04:30 by dekulow           #+#    #+#             */
-/*   Updated: 2024/02/23 14:41:08 by dekulow          ###   ########.fr       */
+/*   Updated: 2024/02/23 15:06:18 by dekulow          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,19 @@
 int			ft_printf(const char *format, ...);
 static t_ui	ft_print_format(const char *format, va_list args);
 
+/**
+ * @brief Prints formatted output to the standard output stream.
+ *
+ * This function takes a format string and a variable number of arguments and
+ * prints the formatted output to the standard output stream. The format string
+ * can contain format specifiers that are replaced by the corresponding argument
+ * values.
+ *
+ * @param format The format string specifying the output format.
+ * @param ...    The variable number of arguments to be formatted and printed.
+ *
+ * @return The total number of characters printed, or -1 if an error occurs.
+ */
 int	ft_printf(const char *format, ...)
 {
 	t_ui	len;
@@ -60,7 +73,7 @@ static t_ui	ft_print_format(const char *format, va_list args)
 		return (ft_print_int(va_arg(args, int)));
 	else if (*format == 'u')
 		return (ft_print_uint(va_arg(args, t_ui)));
-		else
+	else
 	{
 		ft_printf("%%");
 		ft_printf("%c", *format);

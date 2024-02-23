@@ -6,7 +6,7 @@
 /*   By: dekulow <dekulow@42.student.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 11:04:16 by dekulow           #+#    #+#             */
-/*   Updated: 2024/02/23 14:41:47 by dekulow          ###   ########.fr       */
+/*   Updated: 2024/02/23 15:05:21 by dekulow          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 
 t_ui	ft_convert_hex(t_ul number);
 
+/**
+ * Prints the value of a pointer in hexadecimal format.
+ * If the pointer is NULL, it prints "(nil)".
+ *
+ * @param ptr The pointer to be printed.
+ * @return The number of characters printed.
+ */
 t_ui	ft_print_ptr(long ptr)
 {
 	if (ptr == 0)

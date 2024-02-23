@@ -6,7 +6,7 @@
 /*   By: dekulow <dekulow@42.student.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/21 16:24:51 by dekulow           #+#    #+#             */
-/*   Updated: 2024/02/23 14:42:05 by dekulow          ###   ########.fr       */
+/*   Updated: 2024/02/23 15:03:05 by dekulow          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,12 @@ t_ui	ft_convert_itoa(t_ui n, t_ui is_negative)
 	return (ft_putstr_new(buffer));
 }
 
+/**
+ * Converts & print an integer to a string representation.
+ *
+ * @param number The integer to be converted.
+ * @return The number of characters printed.
+ */
 t_ui	ft_itoa_new(int number)
 {
 	if (number == 0)
@@ -50,6 +56,12 @@ t_ui	ft_itoa_new(int number)
 	return (ft_convert_itoa(number, 0));
 }
 
+/**
+ * Converts & print an unsigned integer to a string representation.
+ *
+ * @param n The unsigned integer to convert.
+ * @return The number of characters printed.
+ */
 t_ui	ft_utoa(t_ui n)
 {
 	char	buffer[10];
